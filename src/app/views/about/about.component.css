@@ -1,0 +1,84 @@
+/* Contenedor principal */
+.container {
+    max-width: 800px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  /* Tarjeta principal */
+  mat-card {
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 16px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+  }
+  
+  /* Encabezado de la tarjeta */
+  mat-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaciado entre el ícono y el texto */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #3f51b5; /* Color primario */
+  }
+  
+  /* Ícono en el encabezado */
+  mat-icon {
+    font-size: 2rem; /* Tamaño del ícono */
+    color: #3f51b5; /* Color del ícono */
+  }
+  
+  /* Contenido de la tarjeta */
+  mat-card-content {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #555555; /* Color del texto */
+    line-height: 1.6; /* Altura de línea */
+  }
+  
+  /* Panel de expansión */
+  mat-accordion {
+    margin-top: 20px; /* Espaciado superior */
+  }
+  
+  mat-expansion-panel {
+    border: 1px solid #e0e0e0; /* Borde del panel */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espaciado entre paneles */
+  }
+  
+  mat-expansion-panel-header {
+    font-size: 1.1rem; /* Tamaño del texto */
+    font-weight: 500; /* Peso del texto */
+    color: #3f51b5; /* Color primario */
+  }
+  
+  mat-expansion-panel-header:hover {
+    background-color: #f5f5f5; /* Fondo al pasar el mouse */
+  }
+  
+  /* Lista dentro del panel */
+  ul {
+    padding-left: 20px; /* Espaciado izquierdo */
+    margin: 10px 0; /* Espaciado superior e inferior */
+  }
+  
+  li {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #555555; /* Color del texto */
+  }
+  
+  /* Botón */
+  button[mat-button] {
+    font-size: 1rem; /* Tamaño del texto */
+    font-weight: 500; /* Peso del texto */
+    color: #ffffff; /* Texto blanco */
+    background-color: #3f51b5; /* Fondo primario */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición para el hover */
+  }
+  
+  button[mat-button]:hover {
+    background-color: #303f9f; /* Fondo más oscuro al pasar el mouse */
+  }

@@ -1,0 +1,76 @@
+/* Fondo general del home */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 80vh;
+    background: linear-gradient(to bottom right, #f5f7fa, #e4ecf7);
+  }
+  
+  /* Estilo general para la tarjeta */
+  mat-card {
+    width: 100%;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin: 20px auto
+  }
+  
+  /* Encabezado de la tarjeta con ícono */
+  mat-card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #3f51b5;
+  }
+  
+  /* Ícono en el encabezado */
+  mat-icon {
+    font-size: 1.5rem;
+    color: #3f51b5;
+
+    /* Removed invalid property */
+  }
+  
+  /* Contenido de la tarjeta */
+  mat-card-content {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Botones de acción centrados */
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  /* Botón estilizado */
+  button[mat-raised-button] {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    background-color: #3f51b5;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[mat-raised-button]:hover {
+    background-color: #303f9f;
+  }
+  

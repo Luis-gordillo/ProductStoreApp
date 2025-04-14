@@ -1,0 +1,80 @@
+/* Contenedor general */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Encabezado */
+  h2.text-center {
+    color: #3f51b5;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  /* Tabla */
+  .table {
+    font-size: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  /* Encabezado oscuro */
+  .table-dark th {
+    background-color: #3f51b5;
+    color: #ffffff;
+  }
+  
+  /* Hover fila */
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Botón de acción */
+  button[mat-icon-button] {
+    color: #3f51b5;
+    transition: transform 0.2s ease;
+  }
+  
+  button[mat-icon-button]:hover {
+    transform: scale(1.2);
+    color: #303f9f;
+  }
+  
+  /* Responsive para pantallas pequeñas */
+  @media (max-width: 576px) {
+    .table thead {
+      display: none;
+    }
+  
+    .table tbody tr {
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 12px;
+    }
+  
+    .table tbody td {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      text-align: left;
+    }
+  
+    .table tbody td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #3f51b5;
+    }
+  }
+  
